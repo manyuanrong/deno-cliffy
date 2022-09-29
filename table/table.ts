@@ -29,7 +29,7 @@ export type ITable<T extends IRow = IRow> = T[] | Table<T>;
 /** Table representation. */
 export class Table<T extends IRow = IRow> extends Array<T> {
   protected static _chars: IBorder = { ...border };
-  protected options: ITableSettings = {
+  options: ITableSettings = {
     indent: 0,
     border: false,
     maxColWidth: Infinity,

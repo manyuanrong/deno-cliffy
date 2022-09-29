@@ -19,7 +19,7 @@ export interface IRowOptions {
  */
 export class Row<T extends ICell | undefined = ICell | undefined>
   extends Array<T> {
-  protected options: IRowOptions = {};
+  options: IRowOptions = {};
 
   /**
    * Create a new row. If cells is a row, all cells and options of the row will
